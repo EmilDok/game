@@ -31,6 +31,7 @@ function startFirstLevel() {
     curLineNumber = 0;
     linesPointsArr = [];
     normalCoords = [];
+    console.clear();
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -44,6 +45,7 @@ function startSecondLevel() {
     curLineNumber = 0;
     linesPointsArr = [];
     normalCoords = [];
+    console.clear();
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -56,6 +58,7 @@ function startSecondLevel() {
 function startThirdLevel() {
     curLineNumber = 0;
     linesPointsArr = [];
+    console.clear();
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -69,6 +72,7 @@ function startFourthLevel() {
     curLineNumber = 0;
     linesPointsArr = [];
     normalCoords = [];
+    console.clear();
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
