@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.line-styles{
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+}
+
+#canvas{
+    background-color: rgb(209, 209, 209);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.control-elements-container{
+    display: flex;
+    justify-content: center;
+}
+
+.control-elements{
+    margin: 70px 0 0 0;
+}
