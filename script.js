@@ -235,12 +235,13 @@ function startGame() {
                 tasks[i].classList.remove("db")
         }
 
+
         switch (levelnum) {
             case 1:
-                startFirstLevel(0.1);
+                startFirstLevel(1 - levelHardness/4);
             break;
             case 2:
-                startSecondLevel(0.1);
+                startSecondLevel(1.25 - levelHardness/4);
             break;
             case 3:
                 startThirdLevel(2 - levelHardness/2.5);
@@ -249,20 +250,6 @@ function startGame() {
                 startFourthLevel(2 - levelHardness/2.5);
             break;
         }
-        // switch (levelnum) {
-        //     case 1:
-        //         startFirstLevel(1 - levelHardness/4);
-        //     break;
-        //     case 2:
-        //         startSecondLevel(1.25 - levelHardness/4);
-        //     break;
-        //     case 3:
-        //         startThirdLevel(2 - levelHardness/2.5);
-        //     break;
-        //     case 4:
-        //         startFourthLevel(2 - levelHardness/2.5);
-        //     break;
-        // }
     }
 }
 
@@ -392,7 +379,7 @@ function levelSucceeded() {
             
         break;
     }
-    
+
     localStorage.setItem(`${levelnum} ${levelHardness}`, points[levelHardness])
     
 
