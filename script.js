@@ -354,8 +354,7 @@ function levelSucceeded() {
     gameResultTitle.innerHTML = "Уровень пройден";
     clearInterval(time);
 
-    if (points[levelHardness] < localStorage.getItem(`${levelnum} ${levelHardness}`, points[levelHardness]))
-        localStorage.setItem(`${levelnum} ${levelHardness}`, points[levelHardness])
+    localStorage.setItem(`${levelnum} ${levelHardness}`, points[levelHardness])
     
 
     switch (levelnum) {
