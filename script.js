@@ -48,6 +48,7 @@ let linesPointsArr = [];
 let specFunc;
 let normalCoords = [];
 let points = [0,0,0];
+let toggleBtn = document.querySelector('.toggle-button');
 
 let penalty = [
     [0,0,0],
@@ -77,6 +78,21 @@ if (localStorage.getItem('username')) {
     gameMenu.classList.add("db")
     helloContainer.classList.add("dn")
     openMenu();
+}
+
+if (localStorage.getItem('theme') == '1') {
+    toggleBtn.click()
+    document.querySelector("body").classList.add("body-theme")
+}
+
+function changeTheme() {
+    if (document.querySelector("body").classList.contains("body-theme")) {
+        document.querySelector("body").classList.remove("body-theme");
+        localStorage.setItem('theme', '0')
+    } else {
+        document.querySelector("body").classList.add("body-theme");
+        localStorage.setItem('theme', '1')
+    }
 }
 
 function Authorizate() {

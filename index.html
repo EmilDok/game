@@ -76,7 +76,6 @@
         </div>
         <div class="btns-container">
             <button onclick="openMenu()">В меню</button>
-            <button onclick="startGame()" class="next-level">Следующий уровень</button>
         </div>
     </div>
     <div class="best-score">
@@ -109,6 +108,10 @@
             <span>-</span>
         </div>
         <button onclick="openMenu()">В меню</button>
+    </div>
+    <div class="switch-theme" onclick="changeTheme()">
+        <input type="checkbox" id="toggle-button" class="toggle-button">
+        <label for="toggle-button" class="text">Сменить тему</label>
     </div>
     <div class="main-container">
         <canvas id="canvas"></canvas>
