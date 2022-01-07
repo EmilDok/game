@@ -274,13 +274,6 @@ function levelFailed() {
     let gameResultPoints = document.querySelector('.game-result .points strong');
     let gameResultPenalty = document.querySelector('.game-result .penalty strong');
     let gameResult = document.querySelector('.game-result');
-    let nextlevel = document.querySelector(".next-level");
-    
-    if (levelnum == 4 || levelsuc[levelnum - 1] == 0) {
-        nextlevel.classList.add("dn")
-    } else if (nextlevel.classList.contains("dn")) {
-        nextlevel.classList.remove("dn")
-    }
 
 
     clearInterval(time);
